@@ -25,6 +25,12 @@ s3_secret: your-aws-secret-key
 s3_bucket: name-of-your-bucket
 ```
 
+You may omit the `s3_id` and `s3_secret` keys in the config file if you
+[have configured AWS credentials](http://docs.aws.amazon.com/sdk-for-ruby/v2/developer-guide/setup-config.html#aws-ruby-sdk-setting-credentials).
+This includes [setting environment variables](http://docs.aws.amazon.com/sdk-for-ruby/v2/developer-guide/setup-config.html#aws-ruby-sdk-credentials-environment),
+using a [shared credentials file](http://docs.aws.amazon.com/sdk-for-ruby/v2/developer-guide/setup-config.html#aws-ruby-sdk-credentials-shared),
+or running an [EC2 instance with IAM roles](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/UsingIAM.html#UsingIAMrolesWithAmazonEC2Instances).
+
 Save the file (as *config.yml*, for example). Now you are ready to go. Run the
 following command:
 
