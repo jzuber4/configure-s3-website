@@ -20,6 +20,10 @@ module ConfigureS3Website
       @config['s3_secret']
     end
 
+    def profile
+      @config['profile']
+    end
+
     def s3_bucket_name
       @config['s3_bucket']
     end
